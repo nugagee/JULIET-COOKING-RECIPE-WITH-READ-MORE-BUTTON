@@ -1,0 +1,178 @@
+.content {
+  width: 80%;
+  border-radius: 50px 0px 10px 0px;
+  background: rgba(218, 170, 15, 0.08);
+  padding: 40px 0px;
+  margin: 70px 0px 50px 10%;
+}
+
+.chef {
+  width: 500px;
+  margin: auto;
+}
+
+.chef img {
+  width: 100%;
+  height: 100%;
+}
+
+.content h5 {
+  text-align: center;
+  font-size: 45px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 0px 50px 0px;
+  color: red;
+}
+
+.content p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  padding: 30px 0px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20x auto;
+}
+.foodrecipe {
+  background-image: linear-gradient(
+      248.08deg,
+      rgba(36, 9, 9, 0.8),
+      rgba(59, 58, 58, 0.8)
+    ),
+    url("../../asset/img/foodposter.jpg");
+  background-position: center center;
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 25px; */
+  padding: 10px 0px;
+}
+
+.food-holder {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 1px 8px 0.5px #ddd8d8;
+  transition: all 0.5s ease-in-out;
+  flex-basis: 400px;
+  margin: 20px;
+  padding: 15px 20px;
+}
+
+.food-holder:hover {
+  transform: scale(1.05);
+}
+
+.food-holder h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0px 0px 3px red;
+}
+
+.food-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted red;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  transition: all 0.3s ease-in;
+}
+
+.food-img:hover {
+  width: 190px;
+  height: 190px;
+  border: 2px dotted black;
+}
+.food-img img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+
+.food-holder h4 {
+  font-size: 12px;
+  text-decoration: wavy;
+  color: red;
+}
+
+.food-holder h2{
+  font-size: 20px;
+  text-decoration: wavy;
+  color: red;
+}
+.food-holder ul,
+h3 {
+  color: black;
+}
+
+.food-holder ul {
+  font-size: 18px;
+}
+
+.food-holder button{
+  background: rgba(255, 0, 0, 0.034);
+  border: none;
+  font-size:14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+
+.food-holder button:hover{
+  background: rgba(255, 255, 255, 0.034);
+  font-size: 16px;
+  /* transform:translateY(90deg); */
+}
+
+.modallabel{
+  font-size: 20px;
+}
+
+.modalmenu{
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 100%;
+    margin: 70px 0px 50px 0px;
+  }
+  .chef {
+    width: 100%;
+  }
+
+  .content h5 {
+    font-size: 30px;
+    max-width: 330px;
+  }
+  .foodrecipe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    padding: 20px 0px;
+  }
+  .food-holder {
+    margin: 0px 0px 0px 20px;
+    width: 85%;
+  }
+  .food-holder h1 {
+    font-size: 25px;
+  }
+}
